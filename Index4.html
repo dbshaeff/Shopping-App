@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link type="text/css" href="main.css" rel="stylesheet"/>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+</head>
+<body>
+	<header>
+		<div class="left">
+			<img id="cart", src="http://us.123rf.com/400wm/400/400/ljupco/ljupco1108/ljupco110800048/10348412-a-shopping-cart-full-with-groceries-isolated-on-white-background.jpg">
+			<h1>The Shopping List</h1>	
+			<div id="buttons">
+			<input type="text" id="input">
+			<input type="button" value="Add" id="submit">
+			</div>	
+		</div>
+	</header>	
+	<div class="instructions">
+		<p>
+			Remove an item: check box and click red button
+			<span>
+				<input value="here" type="button" id="remove_button">
+			</span>
+		</p>
+	<div class="list">
+		<ul id="items" class="remove_item">
+			<li>
+				<input id="checkbox" type="checkbox" index="lastItem">Pasta
+			</li>
+			<li>
+				<input id="checkbox" type="checkbox" index="lastItem">Cereal
+			</li>
+			<li>
+				<input id="checkbox" type="checkbox" index="lastItem">Milk
+			</li>			
+		</ul>
+	</div>				
+</body>
+</html>
