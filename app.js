@@ -1,9 +1,12 @@
 var itemsList = [ ];
 
 $(document).ready(function(){
-	$("#buttons").click(function(){
+	$("#submit").click(function(){
+		if($("input").val()){
+			$("#items").append('<li><input id="checkbox" type="checkbox" index="lastItem">' + $("input").val() + '</li>');
+		} else{alert("enter text");
+	}
 		//alert($("input").val());
-		$("#items").append('<li><input id="checkbox" type="checkbox" index="lastItem">' + $("input").val() + '</li>');
 	});
 	
 	//use enter key to submit
@@ -33,7 +36,7 @@ $(document).ready(function(){
 
 //click checkbox, strikethrough item
 	$(document).on('click','li',function (){
-   		$(this).css('text-decoration:line-through');   
+   		$(this).addClass('strike');   
 });
 
 });
